@@ -1,14 +1,38 @@
-# Funny-funcs [V0.0.1-alpha]
+# 🐍 Funny-funcs `[v0.0.1-alpha]`
 
 ![Python](https://img.shields.io/badge/Language-Python%203.10+-blue)
-![Python](https://img.shields.io/badge/Developer-Purplx-purple)
+![Developer](https://img.shields.io/badge/Developer-Purplx-purple)
+![Status](https://img.shields.io/badge/Status-Mobile--Developed-orange)
 
-# Disclaimer
-This was fully developed on mobile by a python beginer do not expect much from it and expect bugs! Only works in files in the funny functions folder/in the same folder as the funfuncs file. please dont use this in real projects (unless youre leaving a team and want to troll them)
-# How to use
-import funfuncs in your python file within  the same folder as the funfuncs.py file. for everything the library does check example.py
-# Features
-makes python even more english with functions like say() and list() or table() and (probably not) many more!
-check example.py fo all features or funfuncs.py if youre a nerd.
-# Licenses
-All rights reserved to purplxwastaken. you may fork this repository and add/remove or change funtions you may distribute forks if credit is given. The project may not be redistributed in any way to achieve profit.
+## ⚠️ Disclaimer
+This project was **fully developed on mobile** by a Python beginner. Expect bugs, weirdness, and absolute chaos! 
+
+> **Warning:** Please don't use this in serious projects—unless you're quitting your job and want to leave a "gift" for the dev team you're leaving behind. 😉
+
+---
+
+## 🚀 How to Use
+1. Ensure `funfuncs.py` is in the **same folder** as your script.
+2. At the top of your file, add: import funfuncs
+3. Check `example.py` to see all the shenanigans this library can do.
+
+## ✨ Features
+Making Python sound even more like English!
+* `say()`: Because print() is too technical.
+* `table()`: For when lists aren't fancy enough.
+* `list()`: Simplified listing.
+* ...and (probably not) many more!
+
+Check `example.py` for all features, or read `funfuncs.py` directly if you’re a **nerd**.
+
+---
+
+## 📜 License & Usage
+**Copyright © Purplxwastaken**
+
+* **Forks:** You are welcome to fork this repo, add/remove functions, and change things up.
+* **Distribution:** You may distribute forks **only if credit is given** to the original source.
+* **Commercial Use:** This project may **not** be redistributed for profit in any way.
+
+---
+*Typed out one thumb at a time on mobile.* 📱
