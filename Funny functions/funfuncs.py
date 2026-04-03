@@ -3,58 +3,59 @@ import random
 import time
 import os
 
-# --- THE TRAP (Do not move this!) ---
+# exclusive reminder for you nerd looking here using regular python wont work while using funfuncs xd to improve your 'gift''
+
 _real_print = builtins.print
 _real_input = builtins.input
 
 def scream(*args, **kwargs):
     raise Exception("USE THE ENGLISH WAY! Check funfuncs.help() you moron!")
 
-# Kidnapping the standard functions
 builtins.print = scream
 builtins.input = scream
 
-# --- THE 'FUNNY' FUNCTIONS ---
-
 def say(*args):
-    """The civilized way to show text."""
     _real_print(*args)
 
-def get(prompt):
-    """The only way to ask a question."""
+def get(*args):
+    prompt = " ".join(map(str, args)) + " "
     return _real_input(prompt)
 
+def grab_number(*args):
+    try:
+        user_input = get(*args)
+        return int(user_input)
+    except ValueError:
+        say("That's not a number, you clown. Try again.")
+        return grab_number(*args)
+
 def rng(start, end):
-    """Generates a random number between two points."""
     return random.randint(start, end)
 
 def maybe():
-    """Let the computer decide your fate (True or False)."""
     return random.choice([True, False])
 
 def wait(seconds):
-    """Make the code take a nap."""
     time.sleep(seconds)
 
 def wipe():
-    """Clear the screen because it's messy."""
     os.system('cls' if os.name == 'nt' else 'clear')
 
-def table(*items):
-    """Creates a list variable because 'list' is too techy."""
-    return list(items)
+def stop():
+    say("Goodbye, quitter.")
+    exit()
 
 def help():
-    """The only way to know what you're doing."""
-    _real_print("\n--- FUNFUNCS OFFICIAL GUIDE ---")
-    _real_print("say(...)   -> Use this instead of print()")
-    _real_print("get(...)   -> Use this instead of input()")
-    _real_print("rng(s, e)  -> Get a random number")
-    _real_print("maybe()    -> Returns True or False randomly")
-    _real_print("wait(s)    -> Pause for X seconds")
-    _real_print("wipe()     -> Clears the terminal")
-    _real_print("table(...) -> Saves a list to a variable")
-    _real_print("--------------------------------\n")
+    _real_print("\n--- 🐍 FUNFUNCS v1.0.0-beta.1 ---")
+    _real_print('friendly reminder everything funfuncs can do has to be done woth funfuncs or it wont work, regular python is blocked for what we can do!')
+    _real_print("say(...)         -> Display text")
+    _real_print("get(...)         -> Ask for text")
+    _real_print("grab_number(...) -> Ask for a NUMBER")
+    _real_print("rng(s, e)        -> Get random number")
+    _real_print("maybe()          -> Random True/False")
+    _real_print("wait(s)          -> Pause execution")
+    _real_print("wipe()           -> Clear terminal")
+    _real_print("stop()           -> Kill the program")
+    _real_print("----------------------------------\n")
 
-# A little secret: Whenever they import it, tell them how to find help
-_real_print("Funny-Funcs Loaded. If everything breaks, run funfuncs.help()")
+_real_print("Funny-Funcs CBT Loaded. Use funfuncs.help() to see the list.")
