@@ -1,4 +1,4 @@
-# 🐍 Funny-funcs `[v0.0.1-alpha]`
+# 🐍 Funny-funcs `[v0.1.1-alpha]`
 
 ![Python](https://img.shields.io/badge/Language-Python%203.10+-blue)
 ![Developer](https://img.shields.io/badge/Developer-Purplx-purple)
