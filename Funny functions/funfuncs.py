@@ -2,6 +2,7 @@ import builtins
 import random
 import time
 import os
+import sys
 
 # exclusive reminder for you nerd looking here using regular python wont work while using funfuncs xd to improve your 'gift''
 
@@ -45,9 +46,19 @@ def stop():
     say("Goodbye, quitter.")
     exit()
 
+def glitch(text):
+    """Makes the terminal look like it's having a stroke before showing text."""
+    chars = "!@#$%^&*()_+-=[]{}|;':,.<>?/"
+    for _ in range(15):
+        noise = "".join(random.choice(chars) for _ in range(len(text)))
+        sys.stdout.write(f"\r{noise}")
+        sys.stdout.flush()
+        time.sleep(0.05)
+    _real_print(f"\r{text}")
+
 def help():
     _real_print("\n--- 🐍 FUNFUNCS v1.0.0-beta.1 ---")
-    _real_print('friendly reminder everything funfuncs can do has to be done woth funfuncs or it wont work, regular python is blocked for what we can do!')
+    _real_print('friendly reminder everything funfuncs can do has to be done with funfuncs or it wont work, regular python is blocked for what we can do!')
     _real_print("say(...)         -> Display text")
     _real_print("get(...)         -> Ask for text")
     _real_print("grab_number(...) -> Ask for a NUMBER")
@@ -55,6 +66,7 @@ def help():
     _real_print("maybe()          -> Random True/False")
     _real_print("wait(s)          -> Pause execution")
     _real_print("wipe()           -> Clear terminal")
+    _real_print("glitch(text)     -> Show text with 'hacker' effects")
     _real_print("stop()           -> Kill the program")
     _real_print("----------------------------------\n")
 
